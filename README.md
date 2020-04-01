@@ -1,3 +1,18 @@
+## Input output redirection
+` > `
+directs from stdin to stdout. Example `echo alice > wonderland.txt`
+
+` >> ` 
+append from stdin to stdout. Example `echo `
+
+` | `
+pipe from stdout to stdin. Example ` cat wonderland.txt | grep alice `
+
+` 2&1> `
+
+## grep - Find certain strings etc.
+
+` $grep `
 
 ## du - Disk Usage tool:
 
@@ -83,6 +98,13 @@ $id
 uid=1000(lucy) gid=1000(lucy) groups=1000(lucy),108(vboxusers)
 
 ```
+## su - Substitute user.
+
+```
+$su - root
+~#
+```
+- Uses the profile for user
 
 ## od - dump files in octal hex and binary
 
