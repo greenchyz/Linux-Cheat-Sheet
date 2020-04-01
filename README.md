@@ -1,7 +1,5 @@
 # Linux-Cheat-Sheet
 Cheat Sheet for linux
-# Linux-Cheat-Sheet
-Cheat Sheet for linux
 
 tee - Tee redirects standard input to both standard output and one or more files:
 
