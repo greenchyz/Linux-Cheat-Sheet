@@ -2,7 +2,7 @@
 # du - Disk Usage tool:
 
 
-  > du -sh
+  > $du -sh
   > 124G	.
 
   -s Summary instead of long format like tree
@@ -11,7 +11,11 @@
   
 # dd - Data duplication tool:
 
-  > dd if=/dev/sdb file of=/dev/device bs=512 status=progress
+  > $dd if=/dev/urandom file of=/dev/sdb bs=1M status=progress
+  
+  -if Input file
+  
+  -of Output file
   
   -bs Block size 
   
@@ -19,46 +23,48 @@
  
 # cryptsetup - setting up of encrypted drives using luks:
 
-> cryptsetup 
+> $cryptsetup 
 
  -t Sets the type of encryption to be set
 
 # alias - sets the commands to be aliased to something else:
-  > alias la='ls -la' 
+
+  > $alias la='ls -la' 
   
-  > la
+  > $la
   
-total 64K
+> total 64K
 
-lrwxrwxrwx   1 root root    7 Nov 14 03:23 bin -> usr/bin/
+> lrwxrwxrwx   1 root root    7 Nov 14 03:23 bin -> usr/bin/
 
-drwxr-xr-x   4 root root  16K Jan  1  1970 boot/
+> drwxr-xr-x   4 root root  16K Jan  1  1970 boot/
 
-drwxr-xr-x  21 root root 3.6K Apr  2 06:05 dev/
+> drwxr-xr-x  21 root root 3.6K Apr  2 06:05 dev/
 
-drwxr-xr-x  70 root root 4.0K Apr  2 08:21 etc/
+> drwxr-xr-x  70 root root 4.0K Apr  2 08:21 etc/
 
-drwxr-xr-x   4 root root 4.0K Mar 15 08:45 home/
+> drwxr-xr-x   4 root root 4.0K Mar 15 08:45 home/
 
-lrwxrwxrwx   1 root root    7 Nov 14 03:23 lib -> usr/lib/
+> lrwxrwxrwx   1 root root    7 Nov 14 03:23 lib -> usr/lib/
 
-lrwxrwxrwx   1 root root    7 Nov 14 03:23 lib64 -> usr/lib/
+> lrwxrwxrwx   1 root root    7 Nov 14 03:23 lib64 -> usr/lib/
 
-......
+> ......
 
   
 # lsblk - lists all the block devices
 
-  $ lsblk
-  NAME          MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+ > $ lsblk
   
-sda             8:0    0 238.5G  0 disk 
+ > NAME          MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+  
+> sda             8:0    0 238.5G  0 disk 
 
     ├─sda1          8:1    0   488M  0 part  /boot
 
         └─sda2          8:2    0   238G  0 part  /
 
-sdb             8:16   1  14.4G  0 disk  
+> sdb             8:16   1  14.4G  0 disk  
 
     └─sdb1          8:17   1  14.4G  0 part  
 
@@ -66,13 +72,13 @@ sdb             8:16   1  14.4G  0 disk
   
 # ln - links to files either with symbolic or hard links
 
-   ln -s /
+  > $ln -s /
    
 # id - shows the id of the user
 
  > id
  
-uid=1000(lucy) gid=1000(lucy) groups=1000(lucy),108(vboxusers)
+> uid=1000(lucy) gid=1000(lucy) groups=1000(lucy),108(vboxusers)
 
 
 # od - dump files in octal hex and binary
