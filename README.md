@@ -1,5 +1,5 @@
 
-# du - Disk Usage tool:
+## du - Disk Usage tool:
 
 
 ``` 
@@ -12,7 +12,7 @@
   
   -h Human readable format exchanges for bytes instead of bits
   
-# dd - Data duplication tool:
+## dd - Data duplication tool:
 
   `$dd if=/dev/urandom file of=/dev/sdb bs=1M status=progress`
   
@@ -24,13 +24,13 @@
   
   -status=progress Shows the progress
  
-# cryptsetup - setting up of encrypted drives using luks:
+## cryptsetup - setting up of encrypted drives using luks:
 
 `$cryptsetup`
 
  -t Sets the type of encryption to be set
 
-# alias - sets the commands to be aliased to something else:
+## alias - sets the commands to be aliased to something else:
 
 `$alias la='ls -la'`
   
@@ -57,7 +57,7 @@ lrwxrwxrwx   1 root root    7 Nov 14 03:23 lib64 -> usr/lib/
 ```
 
   
-# lsblk - lists all the block devices
+## lsblk - lists all the block devices
 
  ```
  $ lsblk
@@ -71,37 +71,39 @@ sdb             8:16   1  14.4G  0 disk
   └─encrypted 254:0    0  14.4G  0 crypt /mnt/bookcase
 ```
 
-# ln - links to files either with symbolic or hard links
+## ln - links to files either with symbolic or hard links
 
-  > $ln -s /
+  `$ln -s /`
    
-# id - shows the id of the user
+## id - shows the id of the user
 
- > id
+```
+$id
  
-> uid=1000(lucy) gid=1000(lucy) groups=1000(lucy),108(vboxusers)
+uid=1000(lucy) gid=1000(lucy) groups=1000(lucy),108(vboxusers)
 
+```
 
-# od - dump files in octal hex and binary
+## od - dump files in octal hex and binary
 
-# xxd - hex editor 
+## xxd - hex editor 
   
-# sort - Sorts standard input then outputs the sorted result on standard output.
+## sort - Sorts standard input then outputs the sorted result on standard output.
 
-# uniq - Given a sorted stream of data from standard input, it removes duplicate lines of data (i.e., it makes sure that every line is unique).
+## uniq - Given a sorted stream of data from standard input, it removes duplicate lines of data (i.e., it makes sure that every line is unique).
 
-# fmt - Reads text from standard input, then outputs formatted text on standard output.
+## fmt - Reads text from standard input, then outputs formatted text on standard output.
 
-# tr - Translates characters. Can be used to perform tasks such as upper/lowercase conversions or changing line termination characters from one type to another (for example, converting DOS text files into Unix style text files).
+## tr - Translates characters. Can be used to perform tasks such as upper/lowercase conversions or changing line termination characters from one type to another (for example, converting DOS text files into Unix style text files).
 
-# sed - Stream editor. Can perform more sophisticated text translations than tr.
+## sed - Stream editor. Can perform more sophisticated text translations than tr.
 
-# awk - An entire programming language designed for constructing filters
+## awk - An entire programming language designed for constructing filters
 
-# tee - Tee redirects standard input to both standard output and one or more files:
+## tee - Tee redirects standard input to both standard output and one or more files:
 
-# tr - tr finds-and-replaces one string with another:
+## tr - tr finds-and-replaces one string with another:
 
-# wc - wc counts characters, lines, and words: 
+## wc - wc counts characters, lines, and words: 
 
-# glances - monitoring of system resources similar too top/htop
+## glances - monitoring of system resources similar too top/htop
