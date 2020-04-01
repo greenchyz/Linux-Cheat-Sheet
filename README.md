@@ -1,8 +1,11 @@
 # Linux-Cheat-Sheet
 
 du - Disk Usage tool:
+
   du -sh
+  
   -s Summary instead of long format like tree
+  
   -h Human readable format exchanges for bytes instead of bits
   
 dd - Data duplication tool:
