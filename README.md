@@ -8,7 +8,8 @@ append from stdin to stdout. Example `echo `
 ` | `
 pipe from stdout to stdin. Example ` cat wonderland.txt | grep alice `
 
-` 2&1> `
+` 2>/dev/null `
+output redirection of standard error using file descriptors
 
 ## grep - Find certain strings etc.
 
