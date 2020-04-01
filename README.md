@@ -41,7 +41,7 @@ pipe from stdout to stdin. Example ` cat wonderland.txt | grep alice `
  
 ## cryptsetup - setting up of encrypted drives using luks:
 
-`$cryptsetup`
+`cryptsetup -t luksFormat /dev/sdb1`
 
  -t Sets the type of encryption to be set
 
@@ -101,8 +101,12 @@ uid=1000(lucy) gid=1000(lucy) groups=1000(lucy),108(vboxusers)
 ## su - Substitute user.
 
 ```
-$su - root
-~#
+~ $ su - root
+~ # pwd
+/root
+~ # su - lucy
+~ $ pwd
+/home/lucy
 ```
 - Uses the profile for user
 
