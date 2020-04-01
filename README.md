@@ -2,9 +2,11 @@
 # du - Disk Usage tool:
 
 
- `$du -sh
+``` 
+ $du -sh
   
-   124G	.`
+ 124G	. 
+```
 
   -s Summary instead of long format like tree
   
@@ -32,7 +34,8 @@
 
 `$alias la='ls -la'`
   
-`$la
+```
+$la
   
 total 64K
 
@@ -50,12 +53,14 @@ lrwxrwxrwx   1 root root    7 Nov 14 03:23 lib -> usr/lib/
 
 lrwxrwxrwx   1 root root    7 Nov 14 03:23 lib64 -> usr/lib/
 
-......`
+......
+```
 
   
 # lsblk - lists all the block devices
 
- `$ lsblk
+ ```
+ $ lsblk
  
  NAME          MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 sda             8:0    0 238.5G  0 disk  
@@ -64,7 +69,7 @@ sda             8:0    0 238.5G  0 disk
 sdb             8:16   1  14.4G  0 disk  
 └─sdb1          8:17   1  14.4G  0 part  
   └─encrypted 254:0    0  14.4G  0 crypt /mnt/bookcase
-'
+```
 
 # ln - links to files either with symbolic or hard links
 
