@@ -11,7 +11,8 @@ pipe from stdout to stdin. Example ` cat wonderland.txt | grep alice `
 ` 2>/dev/null `
 output redirection of standard error using file descriptors
 
-## grep - Find certain strings etc.
+## grep 
+### Find certain strings etc.
 
 ` $grep `
 
