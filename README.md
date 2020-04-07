@@ -1,3 +1,4 @@
+# WIP
 ## Input output redirection
 ` > `
 directs from stdin to stdout. Example `echo alice > wonderland.txt`
