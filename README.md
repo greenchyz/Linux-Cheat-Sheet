@@ -40,6 +40,36 @@ output redirection of standard error using file descriptors
   -bs Block size 
   
   -status=progress Shows the progress
+  
+  
+## Screen - Management of virtual terminals 
+
+`screen -A -a -S term1 -X stuff 'top'$'\n'`
+
+-A Sets the window size not to change
+
+-a sets all features for all terminal 
+
+-S name for the screen session
+
+-X execute certain command
+
+## Watch - watch certain processes or log files etc
+
+`watch -n 20 ss -t`
+
+```
+Every 20.0s: ss -t                                                                                                                                                                                                                                Lucy: Tue Apr  7 22:09:08 2020
+
+State Recv-Q Send-Q Local Address:Port    Peer Address:Port Process
+ESTAB 0      0      192.168.1.104:33050   141.70.143.21:https
+ESTAB 0      0      192.168.1.104:34914  110.120.257.10:https
+ESTAB 0      0      192.168.1.104:54554   169.254.188.13:https
+ESTAB 0      0      192.168.1.104:35434 192.168.1.209:https
+ESTAB 0      0      192.168.1.104:49664  10.10.10.26:https
+```
+
+## 
  
 ## cryptsetup - setting up of encrypted drives using luks:
 
